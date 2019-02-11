@@ -12,7 +12,7 @@ export class NewAccountComponent {
   constructor(private _loggingService: LoggingService,
               private _DataService: DataService ){
                 _DataService.statusUpdate.subscribe(
-                  (status:string)=>alert("new status"+status))
+                  (status:string)=>alert("new status: "+status))
               }
 
   onCreateAccount(accountName:string, status:string) {
